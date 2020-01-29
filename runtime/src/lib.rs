@@ -413,7 +413,8 @@ impl_runtime_apis! {
             Grandpa::grandpa_authorities()
         }
     }
-        impl contracts_rpc_runtime_api::ContractsApi<Block, AccountId, Balance> for Runtime {
+    
+    impl contracts_rpc_runtime_api::ContractsApi<Block, AccountId, Balance> for Runtime {
         fn call(
             origin: AccountId,
             dest: AccountId,
